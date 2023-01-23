@@ -1,0 +1,80 @@
+{% extends "base_ukraine.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/ukraine_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<main class="contenedor">
+
+	<div class="sobre-nosotros">
+		<div class="sobre-nosotros__texto">
+			<img class="team" src="{% static 'img/chat.png' %}" alt="img Partners">
+
+
+		</div>
+
+		<div class="sobre-nosotros__imagen">
+            <img class="team" src="{% static 'img/ukraine_background.png' %}" alt="img Partners">
+		</div>
+	</div>
+
+	<p class="stopwar">STOP</p>
+	<p class="stopwar2"> WAR </p>
+
+	<h3 class="centrar-texto">НАПРЯМКИ РОБОТИ</h3>
+
+	<div class="sobre-nosotros">
+		<div class="sobre-nosotros__texto">
+			<h5>STEM, освіта та підвіщення кваліфікації IT спеціалістів.</h5>
+			Ми навчаємо або допомогаємо підвищити кваліфікацію людям, які шукають роботу, та вчимо використовувати звичайні онлайн-інструменти для бізнесу.<br>
+
+			<br>Основна увага Open Build в допомозі бізнесу та приватним особам, які шукають роботу в Україні, ми допомогаємо тим, хто зацікавлений у відновленні, за допомогою онлайн або хмарних бізнес-інструментів та навчання.
+
+
+			<h5>Open Build допомагає малому бізнесу та некомерційним організаціям</h5>
+			Ми надаємо компаніям можливість використовувати онлайн-навчання та програмне забезпечення для відновлення бізнесу за допомогою  маркетингу, продажу та управління бізнесом на місцевому та міжнародному рівні.
+
+
+			<div class="heightspace">
+			</div>
+			<img class="team" src="{% static 'img/contribute.png' %}" alt="img Partners">
+
+		</div>
+
+		<div class="sobre-nosotros__texto">
+			<h5>Допомога уразливим групам населення навчитися базовим знанням IT.</h5>
+			Ми допомогаємо малозабезпеченим групам населення, навчитися базовим і передовим технологічним навичкам як у підтримці та розробці програмного забезпечення в Інтернеті, так і в базових підприємницьких і ділових навичках.<br>
+
+			<br>Ми забезпечуємо базову бізнес-підготовку та навчання мовним курсам через безкоштовні онлайн-курси та портали.
+			<h5>Колоборації між IT компаніями</h5>
+			<br>Open Build Ukraine працює разом з іншими підрозділами організації. Наразі організація має діяльність у США та Південній Америці, зосереджену на навчанні з розробки програмного забезпечення для малозабезпечених спільнот.<br>
+
+            <br>В минулому ми працювали з бізнесом, урядом та неурядовими організаціями, щоб навчати та будувати бізнеси, які модернізовані та зосереджені на сталому зростанні та навчанні працівників.
+
+			<aside class="sidebar">
+				<h3></h3>
+
+				<ul class="cursos no-padding">
+					<li class="widget-curso">
+						<h4 class="no-margin"></h4>
+						<br>
+						<script>(function() { var d = document, fr = d.createElement('script'); fr.type = 'text/javascript'; fr.async = true; fr.src = 'https://static.fundrazr.com/widgets/loader.js'; var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fr, s);})();</script>
+						<div class="fr-widget" data-type="badge" data-variant="rectangle" data-width="300" data-url="https://fnd.us/524nDf"><a href="https://fundrazr.com" target="_blank"><img src="//static.fundrazr.com/widgets/powered-by.png" alt="Powered by FundRazr" /></a></div>
+					</li>
+
+				</ul>
+			</aside>
+		</div>
+	</div>
+
+
+</main>
+
+
+{% endblock content %}

@@ -1,0 +1,49 @@
+{% extends "base_español.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/inicio_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<main class="contenedor">
+	<h3 class="centrar-texto">Fundidora</h3>
+
+	<div class="sobre-nosotros">
+		<div class="sobre-nosotros__texto">
+			Buildly y Open Build Foundry es una colección de herramientas de código abierto, servicios de mercado, descuentos, créditos y marcos de procesos que ayudan a los equipos empresariales y de inicio a lanzar aplicaciones de compilación y migración a arquitecturas nativas de la nube y mantenerlas a largo plazo.
+			<b>La asociación de Buildly Foundry y Open Build ayuda a impulsar el desarrollo técnico al proporcionar:</b>
+
+			<ul>
+			<li>La arquitectura nativa en la nube fácil de usar de Buildly y un servicio de alojamiento para crear sus nuevas aplicaciones.</li>
+
+			<li>Tres meses de uso del producto alojado y las herramientas de lanzamiento de Buildly para mantener a los administradores, partes interesadas y desarrolladores sincronizados con el estado y el progreso de su aplicación.</li>
+
+			<li>Acceso a una red de socios de desarrollo certificados por Buildly.</li>
+
+			<li>Tres meses de orientación técnica de los CTO de campo de Buildly.</li>
+
+			<li>Acceso a créditos de alojamiento en la nube, auditorías de seguridad y recursos de diseño y marketing.</li>
+			</ul>
+			<p>
+			Los graduados de Buildly Foundry reciben tarifas con descuento en las herramientas de lanzamiento y productos alojados de Buildly.
+
+			Únase a Buildly Foundry y dedique su tiempo a concentrarse en la visión de su aplicación, y deje de preocuparse por los problemas técnicos.
+			</p>
+			<a href="https://www.f6s.com/buildly-foundry-accelerator-2022/apply" class="boton boton--primario">Aplicación</a>
+
+		</div>
+
+		<div class="sobre-nosotros__imagen">
+            <img class="team" src="{% static 'img/fundidora.png' %}" alt="img Partners">
+		</div>
+	</div>
+
+</main>
+
+
+{% endblock content %}
