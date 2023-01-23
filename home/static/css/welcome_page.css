@@ -69,22 +69,23 @@ img {
    color: var(--primario);
    margin-top: 5rem;
 }
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger{
+    display: none;
+}
+
 @media (min-width: 768px) {
     .header__texto {
         margin-top: 15rem;
     }
 }
-.barra {
-    padding-top: 4rem;
-}
 
-@media (min-width: 768px) {
-    .barra {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
 .logo {
     color: var(--primario); /** #FBBE63; other option**/
 
@@ -103,10 +104,15 @@ img {
     font-weight: 700;
 }
 
+.navegacion{
+    margin-top: 20px;
+}
+
 @media (min-width: 768px) {
     .navegacion {
         display: flex;
         gap: 2rem;
+        margin-top: 20px;
     }
 }
 .navegacion__enlace {
@@ -135,12 +141,22 @@ img {
 
 .barra ul {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 .navbar-nav > li {
     position:relative;
-    display: inline-block;
+    display: inline-flex;
     margin: 7px;
+}
+
+.hamburgerContainer{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .submenu {
@@ -491,8 +507,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .container-card{
-    width: 100%;
+    max-width: 300px;
+    height: fit-content;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1100px;
     margin: auto;
 }
@@ -524,6 +543,7 @@ body {
 .card img{
     width: 100%;
     height: 210px;
+    object-fit: cover;
 }
 .card .contenido-card{
     padding: 15px;
@@ -575,5 +595,43 @@ body {
     }
     .card1{
         margin: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .barra {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .barra{
+        flex-direction: row;
+    }
+
+    .navegacion{
+        align-items: flex-end;
+    }
+
+    .hamburger{
+        display: flex;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    .barra .menu{
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 250px;
+        position: fixed;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--blanco);
+        box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.384);
+        display: none;
     }
 }
